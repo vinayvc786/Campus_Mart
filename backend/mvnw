@@ -1,0 +1,14 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Maven Wrapper script for Unix
+# ----------------------------------------------------------------------------
+
+WRAPPER_JAR="$(dirname "$0")/.mvn/wrapper/maven-wrapper.jar"
+
+if [ ! -f "$WRAPPER_JAR" ]; then
+    echo "Downloading Maven Wrapper..."
+    mkdir -p "$(dirname "$0")/.mvn/wrapper"
+    curl -fsSL https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.2/maven-wrapper-3.3.2.jar -o "$WRAPPER_JAR"
+fi
+
+exec java -Dfile.encoding=UTF-8 -Dmaven.multiModuleProjectDirectory="$(dirname "$0")" -classpath "$WRAPPER_JAR" org.apache.maven.wrapper.MavenWrapperMain "$@"

@@ -1,0 +1,6 @@
+{
+  "name": "Campus Mart - Student Peer Marketplace",
+  "description": "Verified student-to-student campus marketplace to buy and sell engineering drafters, scientific calculators, semester notes, and academic essentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
