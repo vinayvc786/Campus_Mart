@@ -11,38 +11,38 @@ Thumbs.db
 .env*
 !.env.example
 
-# Node.js / Web Frontend (frontend/web)
-node_modules/
-dist/
-dist-ssr/
-build/
-coverage/
-.vite/
-**/node_modules/
-**/dist/
-
-# Spring Boot / Maven Backend (backend)
-backend/target/
+# Spring Boot Backend (springboot)
+springboot/target/
 **/target/
 .mvn/wrapper/maven-wrapper.jar
 
-# Flutter / Dart Mobile App (frontend/flutter)
-frontend/flutter/.dart_tool/
-frontend/flutter/.flutter-plugins
-frontend/flutter/.flutter-plugins-dependencies
-frontend/flutter/.pub-cache/
-frontend/flutter/.pub/
-frontend/flutter/build/
-frontend/flutter/android/app/debug/
-frontend/flutter/android/app/profile/
-frontend/flutter/android/app/release/
-frontend/flutter/ios/Flutter/.last_build_id
-frontend/flutter/ios/Flutter/Generated.xcconfig
-frontend/flutter/ios/Flutter/flutter_export_environment.sh
-frontend/flutter/macos/Flutter/ephemeral/
-frontend/flutter/windows/flutter/ephemeral/
-frontend/flutter/linux/flutter/ephemeral/
+# Flutter Mobile App (flutter)
+flutter/.dart_tool/
+flutter/.flutter-plugins
+flutter/.flutter-plugins-dependencies
+flutter/.pub-cache/
+flutter/.pub/
+flutter/build/
+flutter/android/app/debug/
+flutter/android/app/profile/
+flutter/android/app/release/
+flutter/ios/Flutter/.last_build_id
+flutter/ios/Flutter/Generated.xcconfig
+flutter/ios/Flutter/flutter_export_environment.sh
+flutter/macos/Flutter/ephemeral/
+flutter/windows/flutter/ephemeral/
+flutter/linux/flutter/ephemeral/
 **/.dart_tool/
 **/build/
 **/.pub-cache/
 **/.pub/
+
+# Web App (web)
+web/node_modules/
+web/dist/
+web/dist-ssr/
+web/build/
+web/coverage/
+web/.vite/
+**/node_modules/
+**/dist/

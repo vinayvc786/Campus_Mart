@@ -23,10 +23,9 @@
 ## 🏛 System Architecture
 
 Campus Mart features a complete full-stack ecosystem:
-1. **Frontend Applications (`frontend/`):**
-   - **Web Client (`frontend/web/`):** React 19 + TypeScript + Vite with dynamic category/department filtering and mobile device frame preview.
-   - **Mobile Client (`frontend/flutter/`):** Flutter 3 client app with Material Design 3, native calling/WhatsApp coordination, and platform-aware network loopbacks (`10.0.2.2` vs `localhost`).
-2. **Backend API (`backend/`):** Spring Boot 3.3.4 + Java 21 REST API powered by Spring Security, stateless JWT, dynamic MongoDB queries, and Cloudinary media storage.
+1. **Flutter Mobile Frontend (`flutter/`):** Flutter 3 client app with Material Design 3, native calling/WhatsApp coordination, and platform-aware network loopbacks (`10.0.2.2` vs `localhost`).
+2. **Spring Boot Backend (`springboot/`):** Spring Boot 3.3.4 + Java 21 REST API powered by Spring Security, stateless JWT, dynamic MongoDB queries, and Cloudinary media storage.
+3. **Web Frontend (`web/`):** React 19 + TypeScript + Vite with dynamic category/department filtering and mobile device frame preview.
 
 ```
                       +---------------------------------------+
@@ -82,28 +81,28 @@ Comprehensive technical reports and specifications are stored in the [`details/`
 
 ## 🚀 Getting Started
 
-### 1. Spring Boot Backend
+### 1. Spring Boot Backend (`springboot/`)
 ```bash
-cd backend
+cd springboot
 # Run backend (boots on http://localhost:8080)
 ./mvnw spring-boot:run
 ```
 
-### 2. React Web App
+### 2. Flutter Mobile App (`flutter/`)
 ```bash
-cd frontend/web
+cd flutter
+flutter pub get
+flutter run
+```
+
+### 3. React Web App (`web/`)
+```bash
+cd web
 # Install dependencies
 npm install
 
 # Start Vite dev server (boots on http://localhost:3000)
 npm run dev
-```
-
-### 3. Flutter Mobile App
-```bash
-cd frontend/flutter
-flutter pub get
-flutter run
 ```
 
 ---

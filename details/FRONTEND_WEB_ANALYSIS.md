@@ -9,7 +9,7 @@ The web client for **Campus Mart** is built using **React 19**, **TypeScript**, 
 ## 2. Directory & Component Structure
 
 ```
-frontend/web/
+web/
 ├── src/
 │   ├── components/
 │   │   ├── BottomNav.tsx          # 4-tab sticky bottom navigation bar

@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-The backend service for **Campus Mart** is located in `/backend`. It is an enterprise **Spring Boot 3.3.4** application built on **Java 21 LTS**, utilizing **MongoDB Atlas** for document persistence, **Spring Security** with **JJWT 0.12.6** for stateless authentication, and **Cloudinary** for image storage.
+The backend service for **Campus Mart** is located in `springboot/`. It is an enterprise **Spring Boot 3.3.4** application built on **Java 21 LTS**, utilizing **MongoDB Atlas** for document persistence, **Spring Security** with **JJWT 0.12.6** for stateless authentication, and **Cloudinary** for image storage.
 
 ---
 
@@ -22,7 +22,7 @@ The backend service for **Campus Mart** is located in `/backend`. It is an enter
 ## 3. Package Structure
 
 ```
-backend/src/main/java/com/campusmart/backend/
+springboot/src/main/java/com/campusmart/backend/
 ├── config/
 │   ├── CloudinaryConfig.java             # Cloudinary singleton client setup
 │   └── DataSeeder.java                   # Auto-populates sample inventory on fresh boot

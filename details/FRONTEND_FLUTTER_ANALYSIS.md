@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-The mobile application for **Campus Mart** is located in `frontend/flutter/`. It is a production-ready **Flutter 3** application designed for cross-platform deployment on **Android** and **iOS**, with complete support for Material Design 3 guidelines.
+The mobile application for **Campus Mart** is located in `flutter/`. It is a production-ready **Flutter 3** application designed for cross-platform deployment on **Android** and **iOS**, with complete support for Material Design 3 guidelines.
 
 ---
 
@@ -24,7 +24,7 @@ dependencies:
 ## 3. Architecture & Project Layout
 
 ```
-frontend/flutter/
+flutter/
 ├── lib/
 │   ├── data/
 │   │   └── mock_data.dart                 # High-fidelity offline fallback items

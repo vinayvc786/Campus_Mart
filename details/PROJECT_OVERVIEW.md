@@ -64,28 +64,11 @@ Student Buyer                               |                                 |
 
 ```
 CampusMart/
-├── details/                    # Comprehensive system documentation
-│   ├── README.md               # Master documentation index
-│   ├── PROJECT_OVERVIEW.md     # Architecture & system summary
-│   ├── FRONTEND_WEB_ANALYSIS.md# Web client breakdown
-│   ├── FRONTEND_FLUTTER_ANALYSIS.md # Flutter client breakdown
-│   ├── BACKEND_ANALYSIS.md     # Spring Boot server breakdown
-│   ├── API_SPECIFICATION.md    # REST API contracts
-│   └── DATABASE_SCHEMA.md      # Data models & queries
-├── frontend/                   # Client Applications
-│   ├── README.md               # Frontend directory overview
-│   ├── web/                    # React 19 Web Application
-│   │   ├── src/                # Reusable UI modules & pages
-│   │   ├── public/             # Static assets
-│   │   ├── index.html          # HTML entry point
-│   │   ├── package.json        # Dependencies & scripts
-│   │   ├── tsconfig.json       # TypeScript configuration
-│   │   └── vite.config.ts      # Vite configuration
-│   └── flutter/                # Flutter 3 Mobile Application
-│       ├── lib/                # Dart source code (screens, models, services)
-│       ├── pubspec.yaml        # Flutter dependencies
-│       └── android/ ios/ etc.  # Platform configurations
-├── backend/                    # Spring Boot 3.3.4 Backend
+├── flutter/                    # Flutter 3 Mobile Application
+│   ├── lib/                    # Dart source code (screens, models, services)
+│   ├── pubspec.yaml            # Flutter dependencies
+│   └── android/ ios/ etc.      # Platform configurations
+├── springboot/                 # Spring Boot 3.3.4 Backend
 │   ├── src/main/java/          # Java source code
 │   │   └── com/campusmart/backend/
 │   │       ├── config/         # Cloudinary, DataSeeder configurations
@@ -98,6 +81,21 @@ CampusMart/
 │   │       └── service/        # Business logic services
 │   ├── src/main/resources/     # application.properties
 │   └── pom.xml                 # Maven build dependencies
+├── web/                        # React 19 Web Application
+│   ├── src/                    # Reusable UI modules & pages
+│   ├── public/                 # Static assets
+│   ├── index.html              # HTML entry point
+│   ├── package.json            # Dependencies & scripts
+│   ├── tsconfig.json           # TypeScript configuration
+│   └── vite.config.ts          # Vite configuration
+├── details/                    # Comprehensive system documentation
+│   ├── README.md               # Master documentation index
+│   ├── PROJECT_OVERVIEW.md     # Architecture & system summary
+│   ├── FRONTEND_WEB_ANALYSIS.md# Web client breakdown
+│   ├── FRONTEND_FLUTTER_ANALYSIS.md # Flutter client breakdown
+│   ├── BACKEND_ANALYSIS.md     # Spring Boot server breakdown
+│   ├── API_SPECIFICATION.md    # REST API contracts
+│   └── DATABASE_SCHEMA.md      # Data models & queries
 ├── .gitignore                  # Git ignore rules
 └── README.md                   # Root project readme
 ```
@@ -108,24 +106,24 @@ CampusMart/
 
 ### 5.1 Starting the Spring Boot Backend
 ```bash
-cd backend
+cd springboot
 ./mvnw spring-boot:run
 # Backend will boot on http://localhost:8080
 ```
 
-### 5.2 Starting the React Web Frontend
+### 5.2 Starting the Flutter Mobile App
 ```bash
-cd frontend/web
-npm install
-npm run dev
-# Web application will serve on http://localhost:3000
-```
-
-### 5.3 Starting the Flutter Mobile App
-```bash
-cd frontend/flutter
+cd flutter
 flutter pub get
 flutter run
 # Select your Android Emulator, iOS Simulator, or Chrome
+```
+
+### 5.3 Starting the React Web Frontend
+```bash
+cd web
+npm install
+npm run dev
+# Web application will serve on http://localhost:3000
 ```
 
