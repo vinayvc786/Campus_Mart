@@ -108,3 +108,4 @@ db.listings.createIndex({ "sellerId": 1 });
 // Index for filtering active unsold listings by category
 db.listings.createIndex({ "isSold": 1, "category": 1, "price": 1 });
 ```
+

@@ -63,3 +63,4 @@ Welcome to the technical documentation repository for **Campus Mart**, a verifie
 2. **Campus-Specific Filtering:** Tailored for college curriculum—filter items by department (CSE, ECE, Mech, Civil, IT), semester (1st through 8th), and condition.
 3. **Dual Client Support:** Native mobile experience via Flutter and fast desktop/mobile web portal via React.
 4. **Resilient Data Architecture:** Seamless transition between local seed datasets and live Spring Boot REST endpoints.
+

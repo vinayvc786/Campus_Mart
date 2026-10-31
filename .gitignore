@@ -11,34 +11,38 @@ Thumbs.db
 .env*
 !.env.example
 
-# Node.js / Web Frontend
+# Node.js / Web Frontend (frontend/web)
 node_modules/
 dist/
 dist-ssr/
 build/
 coverage/
 .vite/
+**/node_modules/
+**/dist/
 
-# Spring Boot / Maven Backend
+# Spring Boot / Maven Backend (backend)
 backend/target/
 **/target/
 .mvn/wrapper/maven-wrapper.jar
 
-# Flutter / Dart Mobile App
-flutter_project/.dart_tool/
-flutter_project/.flutter-plugins
-flutter_project/.flutter-plugins-dependencies
-flutter_project/.pub-cache/
-flutter_project/.pub/
-flutter_project/build/
-flutter_project/android/app/debug/
-flutter_project/android/app/profile/
-flutter_project/android/app/release/
-flutter_project/ios/Flutter/.last_build_id
-flutter_project/ios/Flutter/Generated.xcconfig
-flutter_project/ios/Flutter/flutter_export_environment.sh
-flutter_project/macos/Flutter/ephemeral/
-flutter_project/windows/flutter/ephemeral/
-flutter_project/linux/flutter/ephemeral/
+# Flutter / Dart Mobile App (frontend/flutter)
+frontend/flutter/.dart_tool/
+frontend/flutter/.flutter-plugins
+frontend/flutter/.flutter-plugins-dependencies
+frontend/flutter/.pub-cache/
+frontend/flutter/.pub/
+frontend/flutter/build/
+frontend/flutter/android/app/debug/
+frontend/flutter/android/app/profile/
+frontend/flutter/android/app/release/
+frontend/flutter/ios/Flutter/.last_build_id
+frontend/flutter/ios/Flutter/Generated.xcconfig
+frontend/flutter/ios/Flutter/flutter_export_environment.sh
+frontend/flutter/macos/Flutter/ephemeral/
+frontend/flutter/windows/flutter/ephemeral/
+frontend/flutter/linux/flutter/ephemeral/
 **/.dart_tool/
 **/build/
+**/.pub-cache/
+**/.pub/

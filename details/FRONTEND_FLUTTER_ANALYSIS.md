@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-The mobile application for **Campus Mart** is located in `/flutter_project`. It is a production-ready **Flutter 3** application designed for cross-platform deployment on **Android** and **iOS**, with complete support for Material Design 3 guidelines.
+The mobile application for **Campus Mart** is located in `frontend/flutter/`. It is a production-ready **Flutter 3** application designed for cross-platform deployment on **Android** and **iOS**, with complete support for Material Design 3 guidelines.
 
 ---
 
@@ -24,25 +24,29 @@ dependencies:
 ## 3. Architecture & Project Layout
 
 ```
-flutter_project/lib/
-├── data/
-│   └── mock_data.dart                 # High-fidelity offline fallback items
-├── models/
-│   └── listing.dart                   # Data classes: Listing, Seller, FilterState
-├── screens/
-│   ├── auth_screen.dart               # Student registration & login forms
-│   ├── home_screen.dart               # Grid browse, category filter & search
-│   ├── listing_detail_screen.dart     # Detailed inspection & contact triggers
-│   ├── profile_screen.dart            # Verified user dashboard & seller items
-│   ├── saved_screen.dart              # Wishlist & bookmarked inventory
-│   └── sell_screen.dart               # Multi-step gear listing wizard
-├── services/
-│   └── api_service.dart               # Singleton REST client with auto-IP detection
-├── theme/
-│   └── app_theme.dart                 # Material 3 colors, typography, button styles
-├── widgets/
-│   └── filter_sort_bottom_sheet.dart  # Interactive filter & sort modal
-└── main.dart                          # Application entry & navigation shell
+frontend/flutter/
+├── lib/
+│   ├── data/
+│   │   └── mock_data.dart                 # High-fidelity offline fallback items
+│   ├── models/
+│   │   └── listing.dart                   # Data classes: Listing, Seller, FilterState
+│   ├── screens/
+│   │   ├── auth_screen.dart               # Student registration & login forms
+│   │   ├── home_screen.dart               # Grid browse, category filter & search
+│   │   ├── listing_detail_screen.dart     # Detailed inspection & contact triggers
+│   │   ├── profile_screen.dart            # Verified user dashboard & seller items
+│   │   ├── saved_screen.dart              # Wishlist & bookmarked inventory
+│   │   └── sell_screen.dart               # Multi-step gear listing wizard
+│   ├── services/
+│   │   └── api_service.dart               # Singleton REST client with auto-IP detection
+│   ├── theme/
+│   │   └── app_theme.dart                 # Material 3 colors, typography, button styles
+│   ├── widgets/
+│   │   └── filter_sort_bottom_sheet.dart  # Interactive filter & sort modal
+│   └── main.dart                          # Application entry & navigation shell
+├── pubspec.yaml                           # Flutter dependencies & assets
+└── android/ ios/ macos/ windows/ web/     # Platform target runners
+```
 ```
 
 ---
@@ -94,3 +98,4 @@ When starting the app (`main.dart`):
 - Tabbed interface switching between **Login** and **Register**.
 - College email field validation ensuring official student credentials.
 - Stores JWT token in memory for authenticated requests.
+

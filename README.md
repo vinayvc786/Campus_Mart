@@ -23,9 +23,10 @@
 ## 🏛 System Architecture
 
 Campus Mart features a complete full-stack ecosystem:
-1. **Web Frontend (`src/`):** React 19 + TypeScript + Vite with dynamic category/department filtering and mobile device frame toggle.
-2. **Mobile Frontend (`flutter_project/`):** Flutter 3 client app with Material Design 3, native calling/WhatsApp coordination, and platform-aware network loopbacks (`10.0.2.2` vs `localhost`).
-3. **Backend API (`backend/`):** Spring Boot 3.3.4 + Java 21 REST API powered by Spring Security, stateless JWT, dynamic MongoDB queries, and Cloudinary media storage.
+1. **Frontend Applications (`frontend/`):**
+   - **Web Client (`frontend/web/`):** React 19 + TypeScript + Vite with dynamic category/department filtering and mobile device frame preview.
+   - **Mobile Client (`frontend/flutter/`):** Flutter 3 client app with Material Design 3, native calling/WhatsApp coordination, and platform-aware network loopbacks (`10.0.2.2` vs `localhost`).
+2. **Backend API (`backend/`):** Spring Boot 3.3.4 + Java 21 REST API powered by Spring Security, stateless JWT, dynamic MongoDB queries, and Cloudinary media storage.
 
 ```
                       +---------------------------------------+
@@ -90,6 +91,7 @@ cd backend
 
 ### 2. React Web App
 ```bash
+cd frontend/web
 # Install dependencies
 npm install
 
@@ -99,7 +101,7 @@ npm run dev
 
 ### 3. Flutter Mobile App
 ```bash
-cd flutter_project
+cd frontend/flutter
 flutter pub get
 flutter run
 ```

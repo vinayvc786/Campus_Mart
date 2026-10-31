@@ -9,22 +9,28 @@ The web client for **Campus Mart** is built using **React 19**, **TypeScript**, 
 ## 2. Directory & Component Structure
 
 ```
-src/
-├── components/
-│   ├── BottomNav.tsx          # 4-tab sticky bottom navigation bar
-│   ├── FilterSortSheet.tsx    # Slide-up modal for filtering & sorting
-│   ├── Header.tsx             # Campus selector, search input & mic trigger
-│   ├── ListingDetailView.tsx  # Full product view with seller trust metrics
-│   ├── ProfileView.tsx        # User profile, verified status & active listings
-│   ├── SavedView.tsx          # Bookmarked items collection
-│   ├── SellView.tsx           # Product creation & upload form
-│   └── Toast.tsx              # Transient notification component
-├── data/
-│   └── mockData.ts            # Realistic campus dataset & default categories
-├── types.ts                   # TypeScript interfaces & domain types
-├── App.tsx                    # Central state coordinator & view router
-├── main.tsx                   # ReactDOM entrypoint
-└── index.css                  # Global Tailwind CSS definitions
+frontend/web/
+├── src/
+│   ├── components/
+│   │   ├── BottomNav.tsx          # 4-tab sticky bottom navigation bar
+│   │   ├── FilterSortSheet.tsx    # Slide-up modal for filtering & sorting
+│   │   ├── Header.tsx             # Campus selector, search input & mic trigger
+│   │   ├── ListingDetailView.tsx  # Full product view with seller trust metrics
+│   │   ├── ProfileView.tsx        # User profile, verified status & active listings
+│   │   ├── SavedView.tsx          # Bookmarked items collection
+│   │   ├── SellView.tsx           # Product creation & upload form
+│   │   └── Toast.tsx              # Transient notification component
+│   ├── data/
+│   │   └── mockData.ts            # Realistic campus dataset & default categories
+│   ├── types.ts                   # TypeScript interfaces & domain types
+│   ├── App.tsx                    # Central state coordinator & view router
+│   ├── main.tsx                   # ReactDOM entrypoint
+│   └── index.css                  # Global Tailwind CSS definitions
+├── public/                        # Static assets & images
+├── index.html                     # Application HTML entry point
+├── package.json                   # Dependencies & build scripts
+├── tsconfig.json                  # TypeScript compiler configuration
+└── vite.config.ts                 # Vite bundler configuration
 ```
 
 ---
@@ -77,3 +83,4 @@ The application uses React's `useMemo` hook to filter items with sub-millisecond
 ### 4.5 `SavedView.tsx` & `ProfileView.tsx`
 - Quick access to bookmarked items with instant un-save capability.
 - Profile dashboard showing listings created by the authenticated student, total earnings, and verified student ID card preview.
+

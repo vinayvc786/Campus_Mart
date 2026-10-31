@@ -134,3 +134,4 @@ if (minPrice != null || maxPrice != null) {
 To ensure smooth operation even when third-party cloud credentials are not supplied:
 1. If `CLOUDINARY_CLOUD_NAME` is configured, images are uploaded directly to Cloudinary CDN and the secure HTTPS URL is stored.
 2. If credentials are empty (local testing/dev), `CloudinaryService` converts the uploaded image into an in-memory Base64 data-URI or returns a placeholder image URL, preventing 500 crashes during onboarding.
+
